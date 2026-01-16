@@ -1,0 +1,130 @@
+/* === KOLORY === */
+:root {
+  --bg: #CEE5F2;
+  --paper: #ACCBE1;
+  --ink: #0B1A2A;
+  --accent: #F06CFF;
+  --muted: rgba(11,26,42,0.7);
+  --line: rgba(11,26,42,0.12);
+}
+
+/* === RESET === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* === LAYOUT === */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* === NAV === */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(206,229,242,0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* === HERO === */
+#hero {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #CEE5F2 0%, #ACCBE1 100%);
+}
+
+.hero-inner h1 {
+  font-size: 42px;
+  max-width: 22ch;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* === BUTTONS === */
+.btn {
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--line);
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+}
+
+/* === PROJEKTY === */
+.projects-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card {
+  background: var(--paper);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(11,26,42,0.12);
+}
+
+/* === RESPONSYWNOŚĆ === */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-inner h1 {
+    font-size: 52px;
+  }
+}
