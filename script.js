@@ -1,4 +1,3 @@
-alert("JS działa ✅");
 // Reveal on scroll (pop, ale classy)
 const els = document.querySelectorAll(".reveal");
 const io = new IntersectionObserver((entries) => {
