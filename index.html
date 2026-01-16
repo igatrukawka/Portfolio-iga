@@ -8,7 +8,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,141 +17,174 @@
   <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
-      <span class="brand">Iga Trukawka</span>
-      <nav>
-        <a href="#work">Work</a>
+      <a class="brand" href="#top">Iga Trukawka</a>
+      <nav class="nav__links">
+        <a href="#work">Selected work</a>
         <a href="#about">About</a>
-        <a href="#contact" class="accent">Contact</a>
+        <a class="accent" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__content">
-      <p class="meta">
-        UI Design • Marketing Design • Social Media<br>
-        <span>by Iga Trukawka</span>
-      </p>
-
-      <h1>
-        Design for brands<br>
-        that want to be remembered
-      </h1>
-
-      <p class="microcopy">
-        Tworzę nowoczesne projekty cyfrowe<br>
-        na styku estetyki, strategii i user experience.
-      </p>
-
-      <div class="hero__cta">
-        <a href="#work">View selected work</a>
-        <a href="#contact" class="accent">Let’s work together</a>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="spark spark--1"></span>
+        <span class="spark spark--2"></span>
+        <span class="spark spark--3"></span>
       </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container two-cols">
-      <h2>
-        Creative direction<br>
-        meets digital design
-      </h2>
-
-      <div class="text">
-        <p>
-          Specjalizuję się w UI designie, marketing designie i social mediach
-          dla marek, które stawiają na spójny wizerunek
-          i świadomą komunikację wizualną.
+      <div class="container hero__content">
+        <p class="meta meta--big">
+          UI DESIGN • MARKETING DESIGN • SOCIAL MEDIA<br>
+          <span>by Iga Trukawka</span>
         </p>
-        <p>
-          Projektuję rzeczy, które są czyste, nowoczesne
-          i funkcjonalne, ale nigdy nudne.
+
+        <h1 class="hero__title">
+          Design for brands<br>
+          that want to be remembered
+        </h1>
+
+        <p class="microcopy microcopy--big">
+          Tworzę nowoczesne projekty cyfrowe<br>
+          na styku estetyki, strategii i user experience.
         </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section class="section soft">
-    <div class="container two-cols">
-      <h2>Services</h2>
-      <ul class="services">
-        <li>UI & Web Design</li>
-        <li>Marketing Design</li>
-        <li>Social Media Design</li>
-        <li>Visual Direction</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="work" class="section">
-    <div class="container">
-      <h2>Selected work</h2>
-
-      <div class="projects">
-        <figure>
-          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 1.png" alt="">
-          <figcaption>Holiday Gift Guide · Social Media</figcaption>
-        </figure>
-
-        <figure>
-          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 2.png" alt="">
-          <figcaption>Christmas Gift Guide · Social Media</figcaption>
-        </figure>
-
-        <figure>
-          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 3.png" alt="">
-          <figcaption>Take what you need · Marketing Visual</figcaption>
-        </figure>
-
-        <figure>
-          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 4.png" alt="">
-          <figcaption>Pilates Girl · Social Series</figcaption>
-        </figure>
-
-        <figure>
-          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 5.png" alt="">
-          <figcaption>Moodboard · Visual Direction</figcaption>
-        </figure>
-
-        <figure>
-          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post.png" alt="">
-          <figcaption>What’s in your cart? · Marketing</figcaption>
-        </figure>
+        <!-- CTA: na środku na dole -->
+        <div class="hero__cta hero__cta--bottom">
+          <a class="cta cta--abril" href="#work">View selected work</a>
+          <a class="cta cta--abril cta--accent" href="#contact">Let’s work together</a>
+        </div>
       </div>
 
-      <p class="note">
-        Każdy projekt to połączenie estetyki, funkcji i charakteru marki.
-      </p>
-    </div>
-  </section>
+      <div class="scrollhint" aria-hidden="true">scroll</div>
+    </section>
 
-  <!-- PHILOSOPHY -->
-  <section class="section soft">
-    <div class="container two-cols">
-      <h2>
-        Less noise.<br>
-        More intention.
-      </h2>
-      <p>
-        Wierzę w design, który jest przemyślany, ponadczasowy i spójny wizualnie.
-        Nie podążam ślepo za trendami — wybieram to, co działa.
-      </p>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="container two-cols">
+        <h2 class="h2">
+          Creative direction<br>
+          meets digital design
+        </h2>
 
-  <!-- FOOTER -->
-  <footer id="contact" class="footer">
-    <div class="container footer__inner">
-      <h2>Let’s create something meaningful.</h2>
-      <p>
-        <a href="mailto:iga@email.com" class="accent">iga@email.com</a><br>
-        Instagram · LinkedIn
-      </p>
-    </div>
-  </footer>
+        <div class="text">
+          <p>
+            Specjalizuję się w UI designie, marketing designie i social mediach
+            dla marek, które stawiają na spójny wizerunek i świadomą komunikację wizualną.
+          </p>
+          <p>
+            Projektuję rzeczy, które są czyste, nowoczesne i funkcjonalne, ale nigdy nudne.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section soft reveal">
+      <div class="container two-cols">
+        <h2 class="h2">Services</h2>
+
+        <div class="services-wrap">
+          <ul class="services">
+            <li>UI &amp; Web Design</li>
+            <li>Marketing Design</li>
+            <li>Social Media Design</li>
+            <li>Visual Direction</li>
+          </ul>
+
+          <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+              <span>UI • MARKETING • SOCIAL • VISUAL • </span>
+              <span>UI • MARKETING • SOCIAL • VISUAL • </span>
+              <span>UI • MARKETING • SOCIAL • VISUAL • </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="workhead reveal">
+          <h2 class="h2">Selected work</h2>
+        </div>
+
+        <div class="projects">
+          <figure class="workitem reveal">
+            <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 1.png" alt="Holiday Gift Guide — Social Media post" loading="lazy">
+            <figcaption>Holiday Gift Guide · Social Media</figcaption>
+          </figure>
+
+          <figure class="workitem reveal">
+            <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 2.png" alt="Christmas Gift Guide — Social Media post" loading="lazy">
+            <figcaption>Christmas Gift Guide · Social Media</figcaption>
+          </figure>
+
+          <figure class="workitem reveal">
+            <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 3.png" alt="Take what you need — Marketing Visual" loading="lazy">
+            <figcaption>Take what you need · Marketing Visual</figcaption>
+          </figure>
+
+          <figure class="workitem reveal">
+            <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 4.png" alt="Pilates Girl — Social Series" loading="lazy">
+            <figcaption>Pilates Girl · Social Series</figcaption>
+          </figure>
+
+          <figure class="workitem reveal">
+            <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 5.png" alt="Moodboard — Visual Direction" loading="lazy">
+            <figcaption>Moodboard · Visual Direction</figcaption>
+          </figure>
+
+          <figure class="workitem reveal">
+            <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post.png" alt="What’s in your cart — Marketing" loading="lazy">
+            <figcaption>What’s in your cart? · Marketing</figcaption>
+          </figure>
+        </div>
+
+        <p class="note reveal">
+          Każdy projekt to połączenie estetyki, funkcji i charakteru marki.
+        </p>
+
+        <div class="workcta reveal">
+          <a class="cta cta--abril" href="#top">Back to top</a>
+          <a class="cta cta--abril cta--accent" href="#contact">Let’s work together</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="footer reveal">
+      <div class="container footer__inner">
+        <div>
+          <h2 class="h2 footer__title">Let’s create something meaningful.</h2>
+          <p class="footer__sub">Warszawa, Polska</p>
+          <p class="footer__sub">
+            Tel: <a href="tel:+48607727574">607 727 574</a>
+          </p>
+          <p class="footer__sub">
+            Email: <a href="mailto:igatrukawka0@gmail.com">igatrukawka0@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <a class="cta cta--abril" href="https://www.instagram.com/igatrukawka/" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+          <a class="cta cta--abril" href="https://www.linkedin.com/in/iga-trukawka-851a33373/?skipRedirect=true" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a class="cta" href="#work">View selected work</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
