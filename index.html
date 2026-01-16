@@ -1,74 +1,157 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Iga Trukawka – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iga Trukawka — Portfolio</title>
 
-  <!-- STYLE -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <span class="logo">Iga Trukawka</span>
-      <ul class="nav-links">
-        <li><a href="#about">O mnie</a></li>
-        <li><a href="#projects">Projekty</a></li>
-        <li><a href="#contact" class="btn btn--primary">Kontakt</a></li>
-      </ul>
+  <header class="nav">
+    <div class="container nav__inner">
+      <span class="brand">Iga Trukawka</span>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="accent">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <!-- HERO -->
-  <section id="hero">
-    <div class="container hero-inner">
-      <h1>Projektuję estetyczne i skuteczne rozwiązania wizualne</h1>
-      <p>UI Design · Marketing Design · Social Media</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn--primary">Zobacz projekty</a>
-        <a href="#contact" class="btn btn--ghost">Napisz do mnie</a>
+  <section class="hero">
+    <div class="container hero__content">
+      <p class="meta">
+        UI Design • Marketing Design • Social Media<br>
+        <span>by Iga Trukawka</span>
+      </p>
+
+      <h1>
+        Design for brands<br>
+        that want to be remembered
+      </h1>
+
+      <p class="microcopy">
+        Tworzę nowoczesne projekty cyfrowe<br>
+        na styku estetyki, strategii i user experience.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#work">View selected work</a>
+        <a href="#contact" class="accent">Let’s work together</a>
       </div>
     </div>
   </section>
 
-  <!-- O MNIE -->
+  <!-- ABOUT -->
   <section id="about" class="section">
+    <div class="container two-cols">
+      <h2>
+        Creative direction<br>
+        meets digital design
+      </h2>
+
+      <div class="text">
+        <p>
+          Specjalizuję się w UI designie, marketing designie i social mediach
+          dla marek, które stawiają na spójny wizerunek
+          i świadomą komunikację wizualną.
+        </p>
+        <p>
+          Projektuję rzeczy, które są czyste, nowoczesne
+          i funkcjonalne, ale nigdy nudne.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section soft">
+    <div class="container two-cols">
+      <h2>Services</h2>
+      <ul class="services">
+        <li>UI & Web Design</li>
+        <li>Marketing Design</li>
+        <li>Social Media Design</li>
+        <li>Visual Direction</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="work" class="section">
     <div class="container">
-      <h2>O mnie</h2>
-      <p>
-        Jestem projektantką UI i marketing design. Tworzę nowoczesne,
-        estetyczne i spójne rozwiązania wizualne dla marek online.
+      <h2>Selected work</h2>
+
+      <div class="projects">
+        <figure>
+          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 1.png" alt="">
+          <figcaption>Holiday Gift Guide · Social Media</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 2.png" alt="">
+          <figcaption>Christmas Gift Guide · Social Media</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 3.png" alt="">
+          <figcaption>Take what you need · Marketing Visual</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 4.png" alt="">
+          <figcaption>Pilates Girl · Social Series</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post - 5.png" alt="">
+          <figcaption>Moodboard · Visual Direction</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Cream Neutral Cool Trendy 5 Products Giveaway Instagram Post.png" alt="">
+          <figcaption>What’s in your cart? · Marketing</figcaption>
+        </figure>
+      </div>
+
+      <p class="note">
+        Każdy projekt to połączenie estetyki, funkcji i charakteru marki.
       </p>
     </div>
   </section>
 
-  <!-- PROJEKTY -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Wybrane projekty</h2>
-      <p>UI, marketing design i social media.</p>
-
-      <div class="projects-grid">
-        <div class="card">Projekt UI – Landing Page</div>
-        <div class="card">Social Media – Instagram Feed</div>
-        <div class="card">Marketing Design – Reklamy</div>
-      </div>
+  <!-- PHILOSOPHY -->
+  <section class="section soft">
+    <div class="container two-cols">
+      <h2>
+        Less noise.<br>
+        More intention.
+      </h2>
+      <p>
+        Wierzę w design, który jest przemyślany, ponadczasowy i spójny wizualnie.
+        Nie podążam ślepo za trendami — wybieram to, co działa.
+      </p>
     </div>
   </section>
 
-  <!-- KONTAKT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Kontakt</h2>
-      <p>Napisz do mnie: <strong>iga@email.com</strong></p>
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container footer__inner">
+      <h2>Let’s create something meaningful.</h2>
+      <p>
+        <a href="mailto:iga@email.com" class="accent">iga@email.com</a><br>
+        Instagram · LinkedIn
+      </p>
     </div>
-  </section>
-
+  </footer>
 </body>
 </html>
-
-<link rel="stylesheet" href="style.css">
